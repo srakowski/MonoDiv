@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDiv", "MonoDiv\MonoDiv.csproj", "{80DB7CE6-D384-4C94-A198-ED185621F684}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDiv.Example", "MonoDiv.Example\MonoDiv.Example.csproj", "{BEEAF13F-A817-4D17-A8EB-A21A25D960C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80DB7CE6-D384-4C94-A198-ED185621F684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80DB7CE6-D384-4C94-A198-ED185621F684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80DB7CE6-D384-4C94-A198-ED185621F684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80DB7CE6-D384-4C94-A198-ED185621F684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEEAF13F-A817-4D17-A8EB-A21A25D960C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEEAF13F-A817-4D17-A8EB-A21A25D960C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEEAF13F-A817-4D17-A8EB-A21A25D960C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEEAF13F-A817-4D17-A8EB-A21A25D960C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C77D559A-4010-4A6D-8721-CFFC4CB94989}
+	EndGlobalSection
+EndGlobal
