@@ -63,7 +63,7 @@ namespace MonoDiv
             var result = new Func<Div, Div>((parent) =>
             {
                 var instance = Activator.CreateInstance(divType) as Div;
-                parent.AppendChild(instance);
+                parent?.AppendChild(instance);
 
                 if (divType.FullName == typeof(Div).FullName)
                 {

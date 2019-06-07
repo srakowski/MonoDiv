@@ -44,8 +44,7 @@ namespace MonoDiv
                     _divActivatorRegistry[key] = Div.Compile(divType, _divTypeRegistry, _divActivatorRegistry);
                 }
 
-                var root = new Slot();
-                _divActivatorRegistry[_rootName](root);
+                var root = _divActivatorRegistry[_rootName](null);
             }
             catch (Exception ex)
             {
