@@ -6,7 +6,7 @@ namespace MonoDiv.Example.Divs
 {
     [DivTemplate(@"
         <div>
-            Things:
+            <div>Things:</div>
             <div>Hello World!</div>
             <slot></slot>
         </div>"

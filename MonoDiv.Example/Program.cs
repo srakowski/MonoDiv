@@ -3,16 +3,17 @@
 // file 'LICENSE.txt', which is part of this source code package.
 
 using MonoDiv.Example.Divs;
+using System;
 
 namespace MonoDiv.Example
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
-            var view = new View<App>();
-            view.RegisterDiv<HelloWorld>();
-            view.Initialize();
+            using (var game = new ExampleGame())
+                game.Run();
         }
     }
 }

@@ -3,24 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDiv", "MonoDiv\MonoDiv.csproj", "{80DB7CE6-D384-4C94-A198-ED185621F684}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoDiv.Example", "MonoDiv.Example\MonoDiv.Example.csproj", "{BEEAF13F-A817-4D17-A8EB-A21A25D960C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDiv.Example", "MonoDiv.Example\MonoDiv.Example.csproj", "{BEEAF13F-A817-4D17-A8EB-A21A25D960C9}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MonoDiv", "MonoDiv\MonoDiv.shproj", "{1E9CB36E-F040-43B5-8526-92EA3255D879}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDiv.Core", "MonoDiv.Core\MonoDiv.Core.csproj", "{41C652F0-9310-4B8B-BAEB-E0C0B04442BB}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		MonoDiv\MonoDiv.projitems*{1e9cb36e-f040-43b5-8526-92ea3255d879}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{80DB7CE6-D384-4C94-A198-ED185621F684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{80DB7CE6-D384-4C94-A198-ED185621F684}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{80DB7CE6-D384-4C94-A198-ED185621F684}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{80DB7CE6-D384-4C94-A198-ED185621F684}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BEEAF13F-A817-4D17-A8EB-A21A25D960C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BEEAF13F-A817-4D17-A8EB-A21A25D960C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEEAF13F-A817-4D17-A8EB-A21A25D960C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEEAF13F-A817-4D17-A8EB-A21A25D960C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41C652F0-9310-4B8B-BAEB-E0C0B04442BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41C652F0-9310-4B8B-BAEB-E0C0B04442BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41C652F0-9310-4B8B-BAEB-E0C0B04442BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41C652F0-9310-4B8B-BAEB-E0C0B04442BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

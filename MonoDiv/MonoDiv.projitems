@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>1e9cb36e-f040-43b5-8526-92ea3255d879</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MonoDiv</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Div.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DivTemplateAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Slot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View.cs" />
+  </ItemGroup>
+</Project>

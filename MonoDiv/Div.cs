@@ -2,6 +2,8 @@
 // This file is subject to the terms and conditions defined in
 // file 'LICENSE.txt', which is part of this source code package.
 
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +32,39 @@ namespace MonoDiv
 
         public Div Scope { get; private set; }
 
-        internal static Func<Div, Div> Compile(
+        internal Rectangle Bounds { get; set; }
+
+        internal virtual void UpdateLayout(Point position, SpriteFont font)
+        {
+            if (GetType().FullName != typeof(Div).FullName)
+            {
+                var div = Children.Single();
+                div.UpdateLayout(position, font);
+                Bounds = div.Bounds;
+            }
+            else
+            {
+                var slot = _slots.Values.Single();
+                slot.UpdateLayout(position, font);
+                Bounds = slot.Bounds;
+            }
+        }
+
+        internal virtual void Draw(SpriteBatch spriteBatch, SpriteFont font)
+        {
+            if (GetType().FullName != typeof(Div).FullName)
+            {
+                var div = Children.Single();
+                div.Draw(spriteBatch, font);
+            }
+            else
+            {
+                var slot = _slots.Values.Single();
+                slot.Draw(spriteBatch, font);
+            }
+        }
+
+        internal static Func<Div, Div> Initialize(
             Type divType,
             Dictionary<string, Type> divTypeRegistry,
             Dictionary<string, Func<Div, Div>> divActivatorRegistry)
@@ -116,7 +150,7 @@ namespace MonoDiv
                         break;
 
                     case XText xtxt:
-                        var childText = new Text(xtxt.Value);
+                        var childText = new Text(xtxt.Value.Trim());
                         childText.Scope = instance;
                         slot.AppendChild(childText);
                         break;
